@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+    .restaurant-cards{
+        margin: 20px;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .restaurant-card{
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px
+        rgba(128,128,8,0.4)
+    }
+    .restaurant-image{
+        position: relative;
+    }
+    .restaurant-image .discount{
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .restaurant-image img{
+        width:100%;
+        height: 200px;
+        object-fit: cover;
+
+    }
+    .restaurant-details{
+        padding: 10px;
+        color: gray;
+        font-size: 14px;
+    }
+    .group{
+        display: flex;
+        justify-content: space-between;
+        margin:5px 0;
+    }
+    .rating{
+        background-color: green;
+        color: aliceblue;
+        font-weight: 700;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .restaurant-name{
+        font-weight: 600;
+        color: black;
+    }
+    @media(max-width:780px){
+    .restaurant-card{
+        width: 33.3%;
+    }
+    }
+    @media(max-width:580px){
+    .restaurant-card{
+        width: 50%;
+    }
+    }
+    </style>
+</head>
+<body>
+   <div class="restaurant-cards">
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/Dominos-Pizza-India-menu-and-reviews-780x400.webp" alt="">
+            <div class="discount">
+                40% OFF UPTO &#x20b9 100
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Domino's pizza</p>
+                    <p class="rating">4.6 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>pizza,fast food,desserts</p>
+                        <p>&#x20b9; 400 for Two</p>
+                    </div>
+                <div class="group">
+                    <p>Banjara hills,Hyderabad</p>
+                    <p>5KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/kfc menu card.avif" alt="">
+            <div class="discount">
+                40% OFF UPTO &#x20b9 140
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">KFC</p>
+                    <p class="rating">4.3 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken wings,fast food</p>
+                        <p>&#x20b9; 899 for four</p>
+                    </div>
+                <div class="group">
+                    <p>Jubli hills,Hyderabad</p>
+                    <p>9.8KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/barbeque nation.avif" alt="">
+            <div class="discount">
+                40% OFF UPTO &#x20b9 140
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Barbeque Nation</p>
+                    <p class="rating">4.7 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>veg and non veg platter</p>
+                        <p>&#x20b9; 899 for four</p>
+                    </div>
+                <div class="group">
+                    <p>panjagutta,Hyderabad</p>
+                    <p>4.5KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/burger king menu card.webp" alt="">
+            <div class="discount">
+                40% OFF UPTO &#x20b9 110
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Burger King</p>
+                    <p class="rating">4.0 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken Burger,fast food</p>
+                        <p>&#x20b9; 499 for four</p>
+                    </div>
+                <div class="group">
+                    <p>kukatpelly,Hyderabad</p>
+                    <p>16.2KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/pista house.webp" alt="">
+            <div class="discount">
+                12% OFF UPTO &#x20b9 190
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Pista House</p>
+                    <p class="rating">4.1 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken Dum Biryani,fast food</p>
+                        <p>&#x20b9; 599 for Three</p>
+                    </div>
+                <div class="group">
+                    <p>kukatpelly,Hyderabad</p>
+                    <p>16.2KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/paradise.jpeg" alt="">
+            <div class="discount">
+                30% OFF UPTO &#x20b9 310
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Paradise</p>
+                    <p class="rating">3.5 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken biryani,fast food</p>
+                        <p>&#x20b9; 499 for four</p>
+                    </div>
+                <div class="group">
+                    <p>kukatpelly,Hyderabad</p>
+                    <p>16.2KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/roastery.jpeg" alt="">
+            <div class="discount">
+                40% OFF UPTO &#x20b9 110
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Roastery Coffee House</p>
+                    <p class="rating">4.2 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>cold coffee,desserts</p>
+                        <p>&#x20b9; 120 for Two</p>
+                    </div>
+                <div class="group">
+                    <p>jubli hills,Hyderabad</p>
+                    <p>12.2KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/krishnapatnam-forum-sujana-mall-kphb-colony-hyderabad-restaurants-zlbjqjxvvd.webp" alt="">
+            <div class="discount">
+                10% OFF UPTO &#x20b9 100
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Krishnapatnam</p>
+                    <p class="rating">4.3 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken buffet,natukodi</p>
+                        <p>&#x20b9; 399 for four</p>
+                    </div>
+                <div class="group">
+                    <p>kukatpelly,Hyderabad</p>
+                    <p>16.2KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/subbayya gaari.jpeg" alt="">
+            <div class="discount">
+                12% OFF UPTO &#x20b9 100
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Subbayya Gari Hotel</p>
+                    <p class="rating">4.3 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken buffet,natukodi</p>
+                        <p>&#x20b9; 399 for four</p>
+                    </div>
+                <div class="group">
+                    <p>kukatpelly,Hyderabad</p>
+                    <p>16.2KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/hyderma.jpeg" alt="">
+            <div class="discount">
+                10% OFF UPTO &#x20b9 100
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name"> Hyderama Café Bar</p>
+                    <p class="rating">4.3 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken buffet,natukodi</p>
+                        <p>&#x20b9; 399 for four</p>
+                    </div>
+                <div class="group">
+                    <p>kukatpelly,Hyderabad</p>
+                    <p>16.2KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/pizza hut.jpeg" alt="">
+            <div class="discount">
+                10% OFF UPTO &#x20b9 100
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Pizza Hut</p>
+                    <p class="rating">4.3 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken buffet,natukodi</p>
+                        <p>&#x20b9; 399 for four</p>
+                    </div>
+                <div class="group">
+                    <p>kukatpelly,Hyderabad</p>
+                    <p>16.2KM</p>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-card">
+        <div class="restaurant-image">
+            <img src="image/shah gouse.jpeg" alt="">
+            <div class="discount">
+                10% OFF UPTO &#x20b9 100
+            </div>
+        </div>
+            <div class="restaurant-details">
+                <div class="group">
+                    <p class="restaurant-name">Shah Ghouse</p>
+                    <p class="rating">4.3 &#x2605</p>
+                    </div>
+                    <div class="group">
+                        <p>Chicken buffet,natukodi</p>
+                        <p>&#x20b9; 399 for four</p>
+                    </div>
+                <div class="group">
+                    <p>kukatpelly,Hyderabad</p>
+                    <p>16.2KM</p>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
